@@ -238,8 +238,8 @@ func (i IndexDB) ClearWorkMomentsNotification() (err error) {
 }
 
 func (i IndexDB) Close() error {
-	//TODO implement me
-	panic("implement me")
+	_, err := indexdb.Exec()
+	return err
 }
 
 func (i IndexDB) SetChatLogFailedStatus() {
